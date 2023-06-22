@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
+
+.App {
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+}
+
+button {
+  font-family: "Chakra Petch", sans-serif;
+  border: 3px solid;
+  padding: 5px 5px;
+  font-size: 1.5em;
+}
+
+button:hover {
+  background: red;
+}
+
+.pair-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.front {
+  width: 150px;
+  height: 150px;
+}
+
+.back {
+  width: 150px;
+  height: 150px;
+}

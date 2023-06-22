@@ -1,0 +1,32 @@
+.pair {
+  position: relative;
+}
+
+.pair img {
+  display: box;
+  border-radius: 3px;
+}
+
+/*the picture of the card flipped*/
+.pair .front {
+  transform: rotateY(
+    90deg
+  ); /*rotating it 90 degrees by the y axis effectively hides the picture from the user until it is flipped*/
+  position: absolute; /* setting the position absolute relative to the parent sets the card on top */
+}
+
+.flipped .front {
+  transform: rotateY(
+    0deg
+  ); /*to unflip it we just rotate it back to its absolute position*/
+}
+
+/* top of the card -- before it is flipped */
+.pair .back {
+  transition: all ease-in 0.3s;
+  transition-delay: 0.3s;
+}
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
